@@ -1,0 +1,349 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Base */
+
+body{
+    font-size: 14px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    margin: 0px;
+    position: relative;
+    z-index: -2;
+}
+
+section{
+    width: 86%;
+    margin: auto;
+}
+
+/*--------------------HEADER--------------------*/
+
+header{
+    padding-top: 35px;
+    padding-bottom: 80px;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0px 0px 25px 25px;
+    position: relative;
+    z-index: -1;
+}
+
+header > div{
+    width: 86%;
+    margin: auto;
+}
+
+header > div > div:first-child{
+    border-bottom: 1px solid hsl(228, 12%, 44%);
+    padding-bottom: 7px;
+}
+
+header > div > div h1{
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    color: hsl(230, 17%, 14%);
+    margin: 0;
+}
+
+header > div > div:first-child p{
+    margin-top: 3px;
+}
+
+header > div > div p{
+    font-weight: 700;
+    font-size: 1em;
+    color: hsl(228, 12%, 44%);
+}
+
+header > div > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* Button management */
+
+header > div > div:last-child > div{
+    height: 24px;
+    width: 48px;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(230, 22%, 74%);
+}
+
+header > div > div:last-child > div:hover{
+    cursor: pointer;
+}
+
+header > div > div:last-child > div > div{
+    height: 18px;
+    width: 18px;
+    border-radius: 12px;
+    margin-top: 3px;
+    margin-left: 26px;
+    background-color: hsl(225, 100%, 98%)
+}
+
+/*--------------------FIRST SECTION--------------------*/
+
+section:nth-child(2){
+    margin-top: -70px;
+}
+
+section:nth-child(2) > div{
+    display: grid;
+}
+
+section:nth-child(2) > div article{
+    width: 100%;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(227, 47%, 96%);
+    margin-top: 24px;
+    border-top: 4px solid transparent;
+    border-top-left-radius: 6px 4px;
+    border-top-right-radius: 6px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section:nth-child(2) > div article:hover{
+    cursor: pointer;
+}
+
+section:nth-child(2) > div article div:first-child{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+section:nth-child(2) > div article div:first-child p{
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: hsl(228, 12%, 44%);
+}
+
+section:nth-child(2) > div article > p:nth-child(2){
+    color: hsl(230, 17%, 14%);
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+}
+
+section:nth-child(2) > div article > p:nth-child(3){
+    color: hsl(228, 12%, 44%);
+    margin-top: 0px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+section:nth-child(2) > div article div:last-child{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Up or Down management */ 
+
+section:nth-child(2) > div article div:last-child p{
+    color: hsl(163, 73%, 40%); 
+    font-weight: 700;
+    margin-left: 4px;
+    font-size: .87em;
+}
+
+section:nth-child(2) > div article:last-child div:last-child p{
+    color: hsl(356, 69%, 56%);
+}
+
+/* Border management (article) */
+
+section:nth-child(2) > div article:first-child{
+    border-color:hsl(208, 92%, 53%);
+}
+
+section:nth-child(2) > div article:nth-child(2){
+    border-color:hsl(203, 89%, 53%);
+}
+
+section:nth-child(2) > div article:nth-child(3){
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    border: none;
+}
+
+section:nth-child(2) > div article:nth-child(3)::after{
+    content:"";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: -4px;
+    background: linear-gradient(to right, #fdc468, #df4996);
+    border-top-right-radius: 4px 4px;
+    border-top-left-radius: 4px 4px;
+}
+
+section:nth-child(2) > div article:last-child{
+    border-color:hsl(356, 69%, 56%);
+}
+
+/*--------------------SECOND SECTION--------------------*/
+
+section:nth-child(3) > h2{
+    margin-top: 45px;
+    color: hsl(228, 12%, 44%);
+    font-size: 1.8em;
+}
+
+section:nth-child(3) > div{
+    margin-top: 28px;
+    display: grid;
+}
+
+section:nth-child(3) article{
+    background-color: hsl(227, 47%, 96%);
+    padding: 25px;
+    margin-top: 17px;
+    border-radius: 5px;
+}
+
+section:nth-child(3) article:hover{
+    background-color: #e1e3f0;
+    cursor: pointer;
+}
+
+section:nth-child(3) article > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-child(3) article div:first-child > p{
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    margin: 0;
+} 
+
+section:nth-child(3) article div:last-child{
+    margin: 18px 0px 0px 0px;
+}
+
+section:nth-child(3) article div:last-child > p:first-child{
+    color: hsl(230, 17%, 14%);
+    font-weight: 700;
+    font-size: 2.2em;
+    margin: 0;
+} 
+
+section:nth-child(3) article div:last-child > div{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+section:nth-child(3) article div:last-child > p:last-child{
+    margin: 0px 0px 0px 4px;
+    font-weight: 700;
+    font-size: 0.9em;
+} 
+
+/* Up or Down management */
+
+section:nth-child(3) article:nth-child(1) div:last-child > p:last-child, section:nth-child(3) article:nth-child(3) div:last-child > p:last-child, section:nth-child(3) article:nth-child(4) div:last-child > p:last-child, section:nth-child(3) article:nth-child(5) div:last-child > p:last-child, section:nth-child(3) article:nth-child(6) div:last-child > p:last-child{
+    color: #1bb086;
+}
+
+section:nth-child(3) article:nth-child(2) div:last-child > p:last-child, section:nth-child(3) article:nth-child(7) div:last-child > p:last-child, section:nth-child(3) article:nth-child(8) div:last-child > p:last-child{
+    color: hsl(356, 69%, 56%);
+}
+
+/* Attribution */
+body > div {
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
+
+body > div a{
+    color:hsl(230, 17%, 14%);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px){
+    section{
+        width: 77%;
+    }
+
+    header{
+        padding-bottom: 140px;
+    }
+
+    header > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 77%;
+    }
+
+    header > div > div:first-child{
+        border-bottom: none;
+    }
+
+    header > div > div:first-child > h1{
+        font-size: 2em;
+    }
+
+    header > div > div:last-child div{
+        margin-left: 15px;
+    }
+
+    section:nth-child(2){
+        margin-top: -135px;
+    }
+
+    section:nth-child(2) > div{
+        margin: 0px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: end;
+    }
+
+    section:nth-child(3) > h2{
+        margin-bottom: 0;
+    }
+
+    section:nth-child(3) > div{
+        margin-top: 25px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section:nth-child(3) > div article{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    section:nth-child(2) > div{
+        grid-gap: 30px;
+    } 
+
+    section:nth-child(3) > div{
+        grid-gap: 30px;
+    }
+}
+
+
+
